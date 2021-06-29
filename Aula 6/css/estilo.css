@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:ring;
+    src: url('../font/ring.TTF');
+}
+*{
+    margin: 0;
+    padding: 0;   
+}
+html{
+    scroll-behavior: smooth;
+}
+#principal{
+    width: 100%;
+    height: 500%;
+    background-color: bisque;
+    position: absolute;
+    background-image: url(../img/fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#cabecalho{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    z-index: 91;
+}
+
+#menu_superior{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+#menu_superior ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+#menu_superior a,li{
+    color: aliceblue;
+    font-family: ring;
+    font-size: 2.8vh;
+    text-shadow: 1px 1px 4px #000;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#menu_superior a:hover{
+    text-shadow: 1px 1px 4px #fff;    
+}
+
+#p1,#p2,#p3,#p4{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#janela1,#janela2,#janela3,#janela4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#janela1{
+    position: fixed;
+}
+#janela2{
+    
+}
+#janela3{
+   
+}
+#janela4{
+}
+
+
+#rodape{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: relative;
+}
+#r_esquerdo,#r_direito{
+    width: 45%;
+    height: 70%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 20px #000, -2px -2px 20px #000;
+}
+#r_esquerdo iframe{
+    width: 100%;
+    height: 100%;
+}
+
